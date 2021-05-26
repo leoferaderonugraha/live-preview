@@ -7,27 +7,17 @@ const carouselGallery = (props) => {
             </li>
         );
     });
-    return React.createElement("div",
-        {
-            className: "col-md-6 left-box"
-        },
-        React.createElement("div",
-            {
-                className: "item"
-            },
-            React.createElement("div",
-                {
-                    className: ""
-                },
-                React.createElement("ul",
-                    {
-                        id: "image-gallery",
-                        className: "gallery list-unstyled cS-hidden"
-                    },
-                    images
-                )
-            )
-        )
-    );
+
+    return (
+        <div className="col-md-6 left-box">
+            <div className="item">
+                <div>
+                    <ul id="image-gallery" className="gallery list-unstyled cS-hidden">
+                        {images}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    )
 };
   
