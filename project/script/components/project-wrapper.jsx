@@ -1,5 +1,3 @@
-const { symbol } = require("prop-types");
-
 /* Assembly all the components */
 class ProjectWrapper extends React.Component {
     render() {
