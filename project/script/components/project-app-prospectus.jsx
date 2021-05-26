@@ -1,5 +1,4 @@
 const projectAppProspectus = (props) => {
-
     return (
         <div className="row row-buttons">
             <div className="col">
