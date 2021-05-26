@@ -5,7 +5,7 @@ const projectProgressBar = (props) => {
                 <div className="progress xs custom-progress">
                     <div className="progress-bar progress-bar-aqua"
                         id="progress-bar"
-                        style={{width: `${props.progress}`}}
+                        style={{width: `${props.progress}%`}}
                         role="progressbar"
                         aria-valuenow={props.progress}
                         aria-valuemin="0"
