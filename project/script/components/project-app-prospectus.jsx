@@ -9,7 +9,7 @@ const ProjectAppProspectus = (props) => {
                 </a>
             </div>
             <div className="col">
-                <a href={props.prospectusLink} id="download-prospectus">
+                <a href={props.prospectusLink}>
                     <button className="btn btn-outline-success btn-detail-bottom" style={{width: "100%"}}>
                         DOWNLOAD PROSPEKTUS
                     </button>

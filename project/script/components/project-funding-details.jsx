@@ -3,19 +3,19 @@ const ProjectFundingDetails = (props) => {
         <div className="row">
             <div className="col">
                 <div className="row">
-                    <p className="detail" id="funding-progress">
+                    <p className="detail">
                         Rp {props.fundingProgress}
                     </p>
                 </div>
                 <div className="row">
-                    <p className="sub-detail" id="total-funding">
+                    <p className="sub-detail">
                         dari Rp {props.totalFunding}
                     </p>
                 </div>
             </div>
             <div className="col">
                 <div className="row">
-                    <p className="detail" id="remaining-days">
+                    <p className="detail">
                         {props.remainingDays}
                     </p>
                 </div>

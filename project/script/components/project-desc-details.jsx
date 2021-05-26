@@ -25,7 +25,7 @@ const ProjectDescDetails = (props) => {
                     </p>
                 </div>
                 <div className="row mt-4">
-                    <img src={props.mapImageUrl} alt="Peta Alamat" id="map-picture" style={{width: "100%"}}/>
+                    <img src={props.mapImageUrl} alt="Peta Alamat" style={{width: "100%"}}/>
                 </div>
             </div>
         </div>
