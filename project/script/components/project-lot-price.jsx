@@ -9,7 +9,7 @@ const projectLotPrice = (props) => {
                 </div>
                 <div className="row">
                     <p className="sub-detail-2" id="lot-price">
-                        Rp. {props.lotPrice}
+                        Rp {props.lotPrice}
                     </p>
                 </div>
             </div>

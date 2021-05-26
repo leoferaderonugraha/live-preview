@@ -4,12 +4,12 @@ const projectFundingDetails = (props) => {
             <div className="col">
                 <div className="row">
                     <p className="detail" id="funding-progress">
-                        Rp. {props.fundingProgress}
+                        Rp {props.fundingProgress}
                     </p>
                 </div>
                 <div className="row">
                     <p className="sub-detail" id="total-funding">
-                        dari Rp. {props.totalFunding}
+                        dari Rp {props.totalFunding}
                     </p>
                 </div>
             </div>
