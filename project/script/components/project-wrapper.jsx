@@ -41,34 +41,34 @@ class ProjectWrapper extends React.Component {
 
         return (
             <div className="col-md-6 right-box pull-md-right box-2">
-                <projectSymbol
+                <ProjectSymbol
                     name={symbolName} 
                 />
-                <projectTitle
+                <ProjectTitle
                     name={projectName}
                     issuerName={projectIssuerName}
                 />
-                <projectCategory
+                <ProjectCategory
                     category={category}
                 />
-                <projectFundingDetails
+                <ProjectFundingDetails
                     fundingProgress={fundingProgress}
                     totalFunding={totalFunding}
                     remainingDays={Math.floor(remainingDays)}
                 />
-                <projectProgressBar
+                <ProjectProgressBar
                     progress={progressBar}
                 />
-                <projectLotPrice
+                <ProjectLotPrice
                     lotPrice={lotPrice}
                     totalLot={totalLot}
                 />
-                <projectDividendDetails
+                <ProjectDividendDetails
                     dividendSchedule={dividendSchedule}
                     annualRentYield={annualRentYield}
                     annualRentYieldUpper={annualRentYieldUpper}
                 />
-                <projectAppProspectus
+                <ProjectAppProspectus
                     prospectusLink={prospectusLink}
                 />
             </div>

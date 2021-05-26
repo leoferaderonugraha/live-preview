@@ -1,4 +1,4 @@
-const projectLotPrice = (props) => {
+const ProjectLotPrice = (props) => {
     return (
         <div className="row mt-4">
             <div className="col">

@@ -1,4 +1,4 @@
-const projectAppProspectus = (props) => {
+const ProjectAppProspectus = (props) => {
     return (
         <div className="row row-buttons">
             <div className="col">

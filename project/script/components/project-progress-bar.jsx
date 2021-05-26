@@ -1,4 +1,4 @@
-const projectProgressBar = (props) => {
+const ProjectProgressBar = (props) => {
     return (
         <div className="row mt-3">
             <div className="col-12">

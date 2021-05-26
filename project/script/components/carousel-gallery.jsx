@@ -1,4 +1,4 @@
-const carouselGallery = (props) => {
+const CarouselGallery = (props) => {
     var images = [];
     props.previewImages.map((image) => {
         images.push(

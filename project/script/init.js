@@ -10,7 +10,7 @@ function initReact(project) {
                     {
                         className: "row"
                     },
-                    React.createElement(carouselGallery, {
+                    React.createElement(CarouselGallery, {
                             previewImages: project["previewImages"]
                     }),
                     React.createElement(ProjectWrapper, {
@@ -25,7 +25,7 @@ function initReact(project) {
                 {
                     className: "container"
                 },
-                React.createElement(projectDescDetails, {
+                React.createElement(ProjectDescDetails, {
                     description: project["description"],
                     address: project["address"],
                     mapImageUrl: project["mapImageUrl"]

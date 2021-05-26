@@ -1,4 +1,4 @@
-const projectTitle = (props) => {
+const ProjectTitle = (props) => {
     return (
         <div className="row-cols-1">
             <div className="row">

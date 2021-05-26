@@ -1,4 +1,4 @@
-const projectFundingDetails = (props) => {
+const ProjectFundingDetails = (props) => {
     return (
         <div className="row">
             <div className="col">
