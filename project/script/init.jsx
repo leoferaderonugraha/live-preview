@@ -1,7 +1,5 @@
 function initReact(project) {
 
-    console.log(project["previewImages"]);
-
     ReactDOM.render(
         // wrapper
         <div>
