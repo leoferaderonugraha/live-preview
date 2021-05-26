@@ -1,7 +1,5 @@
 function initReact(project) {
-
     ReactDOM.render(
-        // wrapper
         <div>
             <div className="container">
                 <div className="row">
