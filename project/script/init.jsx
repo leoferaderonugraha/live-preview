@@ -1,11 +1,14 @@
 function initReact(project) {
+
+    console.log(project["previewImages"]);
+
     ReactDOM.render(
         // wrapper
         <div>
             <div className="container">
                 <div className="row">
                     <carouselGallery
-                        previewImages={[project["previewImages"]]}
+                        previewImages={project["previewImages"]}
                     />
                     <ProjectWrapper
                         project={project}
