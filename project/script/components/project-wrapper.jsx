@@ -1,3 +1,5 @@
+const { symbol } = require("prop-types");
+
 /* Assembly all the components */
 class ProjectWrapper extends React.Component {
     render() {
@@ -39,40 +41,39 @@ class ProjectWrapper extends React.Component {
             remainingDays = 0;
         }
 
-        return React.createElement("div",
-            {
-                className: "col-md-6 right-box pull-md-right box-2"
-            },
-            React.createElement(projectSymbol, {
-                name: symbolName
-            }),
-            React.createElement(projectTitle, {
-                name: projectName,
-                issuerName: projectIssuerName
-            }),
-            React.createElement(projectCategory, {
-                category: category
-            }),
-            React.createElement(projectFundingDetails, {
-                fundingProgress: fundingProgress,
-                totalFunding: totalFunding,
-                remainingDays: Math.floor(remainingDays)
-            }),
-            React.createElement(projectProgressBar, {
-                progress: progressBar
-            }),
-            React.createElement(projectLotPrice, {
-                lotPrice: lotPrice,
-                totalLot: totalLot
-            }),
-            React.createElement(projectDividendDetails, {
-                dividendSchedule: dividendSchedule,
-                annualRentYield: annualRentYield,
-                annualRentYieldUpper: annualRentYieldUpper
-            }),
-            React.createElement(projectAppProspectus, {
-                prospectusLink: prospectusLink
-            })
+        return (
+            <div className="col-md-6 right-box pull-md-right box-2">
+                <projectSymbol
+                    name={symbolName} 
+                />
+                <projectTitle
+                    name={projectName}
+                    issuerName={projectIssuerName}
+                />
+                <projectCategory
+                    category={category}
+                />
+                <projectFundingDetails
+                    fundingProgress={fundingProgress}
+                    totalFunding={totalFunding}
+                    remainingDays={Math.floor(remainingDays)}
+                />
+                <projectProgressBar
+                    progress={progressBar}
+                />
+                <projectLotPrice
+                    lotPrice={lotPrice}
+                    totalLot={totalLot}
+                />
+                <projectDividendDetails
+                    dividendSchedule={dividendSchedule}
+                    annualRentYield={annualRentYield}
+                    annualRentYieldUpper={annualRentYieldUpper}
+                />
+                <projectAppProspectus
+                    prospectusLink={prospectusLink}
+                />
+            </div>
         );
     }
 };
