@@ -5,7 +5,7 @@ function initReact(project) {
             <div className="container">
                 <div className="row">
                     <carouselGallery
-                        previewImages={project["previewImages"]}
+                        previewImages={[project["previewImages"]]}
                     />
                     <ProjectWrapper
                         project={project}
