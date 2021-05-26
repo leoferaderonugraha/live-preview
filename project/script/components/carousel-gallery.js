@@ -2,16 +2,9 @@ const carouselGallery = (props) => {
     var images = [];
     props.previewImages.map((image) => {
         images.push(
-        React.createElement("li",
-            {
-                "data-thumb": image,
-                key: image
-            },
-            React.createElement("img", {
-                src: image,
-                className: "slider-img"
-            })
-        )
+            <li data-thumb={image} key={image}>
+                <img src={image} className="slider-img"></img>
+            </li>
         );
     });
     return React.createElement("div",
