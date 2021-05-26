@@ -1,7 +1,7 @@
 const ProjectSymbol = (props) => {
     return (
         <div className="row">
-            <p>
+            <p id="project-symbol">
                 {props.name}
             </p>
         </div>
