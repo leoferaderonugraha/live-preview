@@ -4,7 +4,7 @@ const CardBase = (props) => {
             <div className="card custom">
                 <CardCarousel
                     id={props.id}
-                    totalImages={props.totalImages}
+                    totalImages={props.previewImages.length}
                     previewImages={props.previewImages}
                 />
                 {CardBody(props)}

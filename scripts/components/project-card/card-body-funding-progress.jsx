@@ -1,6 +1,6 @@
 const CardBodyFundingProgress = (props) => {
     return (
-        <div className="row mt-3">
+        <div className="row">
             <div className="col-8">
                 <div className="row">
                     <div className="col">

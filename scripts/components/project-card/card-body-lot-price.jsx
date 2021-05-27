@@ -1,6 +1,6 @@
 const CardBodyLotPrice = (props) => {
     return (
-        <div className="row">
+        <div className="row mt-3">
             <div className="col">
                 <div className="row">
                     <div className="col">
