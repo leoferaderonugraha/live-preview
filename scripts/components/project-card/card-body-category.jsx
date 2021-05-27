@@ -1,8 +1,8 @@
-const CardBodySymbol = () => {
+const CardBodyCategory = () => {
     return (
         <div className="row">
             <div className="col">
-                <p className="project-symbol">JKT 007</p>
+                <button className="btn project-category">BELI</button>
             </div>
         </div>
     );
