@@ -5,9 +5,9 @@ const ProjectDividendDetails = (props) => {
                 <div className="row">
                     <div className="col-auto pl-0">
                         <span className="detail-2" style={{display: "inline"}}>
-                            Periode Dividen 
+                            Periode Dividen
                         </span>
-                        <i className="fa fa-info-circle" 
+                        <i className="fa fa-info-circle"
                             style={{fontSize: "12px", color: "seagreen"}}
                             data-toggle="tooltip"
                             data-original-title=""
@@ -25,9 +25,9 @@ const ProjectDividendDetails = (props) => {
                 <div className="row">
                     <div className="col-auto pl-0">
                         <span className="detail-2" style={{display: "inline"}}>
-                            Estimasi Dividen 
+                            Estimasi Dividen
                         </span>
-                        <i className="fa fa-info-circle" 
+                        <i className="fa fa-info-circle"
                             style={{fontSize: "12px", color: "seagreen"}}
                             data-toggle="tooltip"
                             data-original-title=""

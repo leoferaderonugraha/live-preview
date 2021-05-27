@@ -15,13 +15,13 @@ class ProjectWrapper extends React.Component {
         var annualRentYield = parseFloat(this.props.project["annualRentYield"]) * 100;
         var annualRentYieldUpper = parseFloat(this.props.project["annualRentYieldUpper"]) * 100;
         var prospectusLink = `https://landx.id/prospektus/${symbolName}.pdf`;
-        
+
         /* calculate the remaining days */
         const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
         const today = new Date().getTime();
         var remainingDays = (this.props.project["settlementDate"] - today) / oneDay;
         /*------------------------------*/
-        
+
         if (remainingDays < 0) {
             remainingDays = 0;
         }
@@ -42,7 +42,7 @@ class ProjectWrapper extends React.Component {
         return (
             <div className="col-md-6 right-box pull-md-right box-2">
                 <ProjectSymbol
-                    name={symbolName} 
+                    name={symbolName}
                 />
                 <ProjectTitle
                     name={projectName}

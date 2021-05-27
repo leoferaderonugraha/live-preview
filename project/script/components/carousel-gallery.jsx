@@ -20,4 +20,3 @@ const CarouselGallery = (props) => {
         </div>
     )
 };
-  

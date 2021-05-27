@@ -7,16 +7,7 @@ const CardBase = (props) => {
                     totalImages={props.totalImages}
                     previewImages={props.previewImages}
                 />
-                <CardBody
-                    projectName={props.projectName}
-                    category={props.category}
-                    fundingProgress={props.fundingProgress}
-                    totalFunding={props.totalFunding}
-                    remainingDays={props.remainingDays}
-                    launchProgress={props.launchProgress}
-                    lotPrice={props.lotPrice}
-                    totalLot={props.totalLot}
-                />
+                {CardBody(props)}
             </div>
         </div>
     );

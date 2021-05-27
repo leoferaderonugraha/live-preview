@@ -22,6 +22,11 @@ const CardBody = (props) => {
                     lotPrice={props.lotPrice}
                     totalLot={props.totalLot}
                 />
+                <CardBodyDividendDetail
+                    dividendSchedule={props.dividendSchedule}
+                    annualRentYield={props.annualRentYield}
+                    annualRentYieldUpper={props.annualRentYieldUpper}
+                />
             </div>
         </div>
     );

@@ -12,7 +12,10 @@ var project = {
     "fundingProgress": "1000000",
     "totalFunding": "1000000",
     "remainingDays": "0",
-    "launchProgress": "100"
+    "launchProgress": "100",
+    "dividendSchedule": "Per 3 Bulan",
+    "annualRentYield": "5",
+    "annualRentYieldUpper": "8"
 };
 
 CreateCard(project);
