@@ -2,11 +2,13 @@ const CardCarousel = (props) => {
     return (
         <div id={props.id} className="carousel slide" data-ride="carousel" data-interval="false">
             <ol className="carousel-indicators">
-                <CardCarouselTarget 
+                <CardCarouselTarget
                     id={props.id}
                     totalImages={props.totalImages}
                 />
-                <CardCarouselInner />
+                <CardCarouselInner
+                    previewImages={props.previewImages}
+                />
             </ol>
         </div>
     );

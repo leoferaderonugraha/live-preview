@@ -3,8 +3,9 @@ function CreateCard(project) {
         <div className="container">
             <div className="row">
                 <CardBase
-                    id={project["id"]}
-                    totalImages={project["totalImages"]}
+                    id={project.id}
+                    totalImages={project.previewImages.length}
+                    previewImages={project.previewImages}
                 />
             </div>
         </div>

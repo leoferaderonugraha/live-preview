@@ -5,6 +5,7 @@ const CardBase = (props) => {
                 <CardCarousel
                     id={props.id}
                     totalImages={props.totalImages}
+                    previewImages={props.previewImages}
                 />
             </div>
         </div>
