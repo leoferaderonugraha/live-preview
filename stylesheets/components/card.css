@@ -10,34 +10,23 @@
 }
 
 /* Card Style */
-.card-project {
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0,0,0,.125);
-    
+.card.custom {
     width: 19rem;
     border-radius: 5px;
 }
 
-.carousel-indicators {
+.carousel-indicators.custom {
     margin-bottom: 0px;
 }
 
-.carousel-indicators > li {
+.carousel-indicators.custom > li {
     width: 10px;
     height: 10px;
     border-radius: 100%;
     cursor: pointer;
 }
 
-.carousel-item > img {
+.carousel-item.custom > img {
     height: 150px;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;

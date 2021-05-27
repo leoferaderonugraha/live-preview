@@ -1,7 +1,7 @@
 const CardBase = (props) => {
     return (
         <div className="col">
-            <div className="card-project">
+            <div className="card custom">
                 <CardCarousel
                     id={props.id}
                     totalImages={props.totalImages}
