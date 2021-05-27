@@ -1,8 +1,8 @@
-const CardBase = () => {
+const CardBase = (props) => {
     return (
         <div className="col">
             <div className="card">
-                <CardCarousel id={1}/>
+                <CardCarousel id={props.id}/>
             </div>
         </div>
     );

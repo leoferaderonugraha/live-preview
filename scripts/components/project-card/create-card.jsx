@@ -2,7 +2,7 @@ function CreateCard() {
     ReactDOM.render(
         <div className="container">
             <div className="row">
-                <CardBase />
+                <CardBase id="test-carousel"/>
             </div>
         </div>
     
