@@ -4,10 +4,12 @@ const CardBody = (props) => {
             <div className="container-fluid px-0">
                 <CardBodyButtonBuy />
                 <CardBodySymbol />
-                <CardBodyName 
+                <CardBodyName
                     projectName={props.projectName}
                 />
-                <CardBodyCategory />
+                <CardBodyCategory
+                    category={props.category}
+                />
             </div>
         </div>
     );

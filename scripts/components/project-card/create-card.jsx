@@ -7,6 +7,7 @@ function CreateCard(props) {
                     totalImages={props.previewImages.length}
                     previewImages={props.previewImages}
                     projectName={props.projectName}
+                    category={props.category}
                 />
             </div>
         </div>

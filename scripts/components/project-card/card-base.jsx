@@ -9,6 +9,7 @@ const CardBase = (props) => {
                 />
                 <CardBody
                     projectName={props.projectName}
+                    category={props.category}
                 />
             </div>
         </div>
