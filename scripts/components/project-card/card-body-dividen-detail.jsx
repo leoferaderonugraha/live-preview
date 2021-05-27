@@ -21,7 +21,7 @@ const CardBodyDividendDetail = (props) => {
                 <div className="row">
                     <div className="col">
                         <p className="sub-progress-detail">
-                            Estimasi Dividen <span className="iconify info-outline-circle" data-icon="ant-design:info-circle-outlined" data-toggle="tooltip" title="Hello"></span>
+                            Estimasi Dividen <span className="iconify info-outline-circle" data-icon="ant-design:info-circle-outlined" data-toggle="tooltip" title={props.dividendEstimatesDesc}></span>
                         </p>
                     </div>
                 </div>
