@@ -6,10 +6,10 @@ const CardCarousel = (props) => {
                     id={props.id}
                     totalImages={props.totalImages}
                 />
-                <CardCarouselInner
-                    previewImages={props.previewImages}
-                />
             </ol>
+            <CardCarouselInner
+                previewImages={props.previewImages}
+            />
         </div>
     );
 };

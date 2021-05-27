@@ -10,7 +10,7 @@
 }
 
 /* Card Style */
-.card.custom {
+div.card.custom {
     width: 19rem;
     border-radius: 5px;
 }
