@@ -41,6 +41,7 @@
 }
 
 .project-button-buy, .project-button-buy:hover {
+    font-family: Roboto;
     font-size: 12px;
     height: 50px;
     letter-spacing: 1.35px;
@@ -59,22 +60,23 @@
 }
 
 .project-symbol {
+    font-family: Roboto !important;
     font-size: 11px;
     letter-spacing: 1.65px;
     font-weight: 400;
-    font-family: 'Roboto';
     color: #2dbe60;
 }
 
 .project-name {
-    font-size: 12px;
+    font-family: Roboto !important;
+    font-size: 14px;
     font-weight: bold;
-    font-family: 'Roboto', sans-serif !important;
     color: #5e798d;
 }
 
 .project-category {
-    font-size: 10px;
+    font-family: Roboto !important;
+    font-size: 12px;
     height: 20px;
     padding: 0px 10px 0px 10px;
     border-radius: 10px;
@@ -87,7 +89,7 @@
 
 .progress-detail {
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 14px;
     color: #2dbe60;
     letter-spacing: 0.25px;
     font-weight: bold;
@@ -101,8 +103,8 @@
 }
 
 .progress {
-    height: 5px;
-    border-radius: 5px;
+    height: 4px;
+    border-radius: 4px;
 }
 
 .progress-bar-green {
@@ -111,7 +113,7 @@
 
 .progress-detail-2 {
     font-family: Roboto;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     color: #5e798d;
 }
