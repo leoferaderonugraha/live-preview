@@ -1,6 +1,6 @@
 const CardCarouselInner = (props) => {
     var carouselItem = [];
-    
+
     for (var i = 0; i < props.previewImages.length; i++) {
         /* Set the first item to be active */
         if (i == 0) {
@@ -17,8 +17,8 @@ const CardCarouselInner = (props) => {
             );
         }
     }
-    
-    return (        
+
+    return (
         <div className="carousel-inner">
             {carouselItem}
         </div>

@@ -15,6 +15,9 @@ const CardBody = (props) => {
                     totalFunding={props.totalFunding}
                     remainingDays={props.remainingDays}
                 />
+                <CardBodyProgressBar
+                    launchProgress={props.launchProgress}
+                />
                 <CardBodyLotPrice
                     lotPrice={props.lotPrice}
                     totalLot={props.totalLot}

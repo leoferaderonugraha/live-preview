@@ -13,7 +13,7 @@ function CreateCard(props) {
                 />
             </div>
         </div>
-    
+
         , document.getElementById("card-base")
     );
 };

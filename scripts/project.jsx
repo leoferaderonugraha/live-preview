@@ -12,6 +12,7 @@ var project = {
     "fundingProgress": "1000000",
     "totalFunding": "1000000",
     "remainingDays": "0",
+    "launchProgress": "100"
 };
 
 CreateCard(project);
