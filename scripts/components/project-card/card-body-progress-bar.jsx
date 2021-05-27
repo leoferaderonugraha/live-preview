@@ -1,9 +1,9 @@
 const CardBodyProgressBar = (props) => {
     return (
-        <div class="row mb-1">
-            <div class="col">
-                <div class="progress sm">
-                    <div class="progress-bar progress-bar-green" style={{width: props.launchProgress + '%'}}></div>
+        <div className="row">
+            <div className="col">
+                <div className="progress sm">
+                    <div className="progress-bar progress-bar-green" style={{width: props.launchProgress + '%'}}></div>
                 </div>
             </div>
         </div>
