@@ -1,7 +1,9 @@
 const CardBody = (props) => {
     return (
-        <div className="container-fluid px-0">
-            <CardBodyButtonBuy />
+        <div className="card-body">
+            <div className="container-fluid px-0">
+                <CardBodyButtonBuy />
+            </div>
         </div>
     );
 }
