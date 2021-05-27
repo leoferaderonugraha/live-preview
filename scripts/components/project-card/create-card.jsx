@@ -8,6 +8,8 @@ function CreateCard(props) {
                     previewImages={props.previewImages}
                     projectName={props.projectName}
                     category={props.category}
+                    lotPrice={props.lotPrice}
+                    totalLot={props.totalLot}
                 />
             </div>
         </div>

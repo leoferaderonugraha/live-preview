@@ -10,6 +10,8 @@ const CardBase = (props) => {
                 <CardBody
                     projectName={props.projectName}
                     category={props.category}
+                    lotPrice={props.lotPrice}
+                    totalLot={props.totalLot}
                 />
             </div>
         </div>

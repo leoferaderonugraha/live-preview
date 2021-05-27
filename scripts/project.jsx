@@ -5,7 +5,9 @@ var project = {
         "https://landx.id/images/SIAP/2.png"
     ],
     "projectName": "Project Name",
-    "category": "INDEKOS"
-}
+    "category": "INDEKOS",
+    "lotPrice": "1000000",
+    "totalLot": "1000"
+};
 
 CreateCard(project);
