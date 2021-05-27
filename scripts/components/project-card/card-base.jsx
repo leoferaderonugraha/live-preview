@@ -12,6 +12,9 @@ const CardBase = (props) => {
                     category={props.category}
                     lotPrice={props.lotPrice}
                     totalLot={props.totalLot}
+                    fundingProgress={props.fundingProgress}
+                    totalFunding={props.totalFunding}
+                    remainingDays={props.remainingDays}
                 />
             </div>
         </div>

@@ -1,34 +1,34 @@
-const CardBodyLotPrice = (props) => {
+const CardBodyFundingProgress = (props) => {
     return (
         <div className="row">
-            <div className="col">
+            <div className="col-8">
                 <div className="row">
                     <div className="col">
-                        <p className="sub-progress-detail">
-                            Harga Per Lot
+                        <p className="progress-detail">
+                            Rp {props.fundingProgress}
                         </p>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <p className="progress-detail-2">
-                            {props.lotPrice}
+                        <p className="sub-progress-detail">
+                            dari Rp {props.totalFunding} Total Pendanaan
                         </p>
                     </div>
                 </div>
             </div>
-            <div className="col">
+            <div className="col-4">
                 <div className="row">
                     <div className="col">
-                        <p className="sub-progress-detail">
-                            Jumlah Lot
+                        <p className="progress-detail">
+                            Rp {props.remainingDays}
                         </p>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
-                        <p className="progress-detail-2">
-                            {props.totalLot}
+                        <p className="sub-progress-detail">
+                            Hari Lagi
                         </p>
                     </div>
                 </div>

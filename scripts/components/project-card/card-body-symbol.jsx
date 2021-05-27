@@ -1,8 +1,10 @@
-const CardBodySymbol = () => {
+const CardBodySymbol = (props) => {
     return (
         <div className="row">
             <div className="col">
-                <p className="project-symbol">JKT 007</p>
+                <p className="project-symbol">
+                    {props.symbol}
+                </p>
             </div>
         </div>
     );

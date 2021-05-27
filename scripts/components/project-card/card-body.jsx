@@ -10,6 +10,11 @@ const CardBody = (props) => {
                 <CardBodyCategory
                     category={props.category}
                 />
+                <CardBodyFundingProgress
+                    fundingProgress={props.fundingProgress}
+                    totalFunding={props.totalFunding}
+                    remainingDays={props.remainingDays}
+                />
                 <CardBodyLotPrice
                     lotPrice={props.lotPrice}
                     totalLot={props.totalLot}
