@@ -16,8 +16,19 @@ var project = {
     "dividendSchedule": "Per 3 Bulan",
     "annualRentYield": "5",
     "annualRentYieldUpper": "8",
-    "dividendPeriodDesc": "Periode dividen aktual akan tetap mengacu pada laporan keuangan dan persetujuan Rapat Umum Pemegang Saham (RUPS).",
-    "dividendEstimatesDesc": "Disclaimer: kinerja masa lalu bukan merupakan indikasi kinerja masa depan. Estimasi dividen adalah ilustrasi berdasarkan proyeksi konservatif, dividen aktual akan tetap mengacu pada kinerja penerbit dan persetujuan Rapat Umum Pemegang Saham (RUPS). Estimasi dividen belum termasuk potensi capital gain dari kenaikan harga saham."
 };
+
+var dividendPeriodDesc = "Periode dividen aktual akan tetap mengacu pada laporan keuangan dan " +
+                            "persetujuan Rapat Umum Pemegang Saham (RUPS).";
+var dividendEstimatesDesc = "Disclaimer: kinerja masa lalu bukan merupakan indikasi kinerja masa depan." +
+                            " Estimasi dividen adalah ilustrasi berdasarkan proyeksi konservatif, dividen" +
+                            " aktual akan tetap mengacu pada kinerja penerbit dan persetujuan"+
+                            " Rapat Umum Pemegang Saham (RUPS). Estimasi dividen belum termasuk potensi" +
+                            " capital gain dari kenaikan harga saham.";
+
+project.dividendPeriodDesc = dividendPeriodDesc;
+project.dividendEstimatesDesc = dividendEstimatesDesc;
+
+alert("loaded");
 
 CreateCard(project);
