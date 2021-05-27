@@ -1,3 +1,1 @@
-$(document).onready(()=> {
-    CreateCard();
-});
+CreateCard();
