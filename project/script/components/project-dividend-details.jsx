@@ -7,10 +7,10 @@ const ProjectDividendDetails = (props) => {
                         <span className="detail-2" style={{display: "inline"}}>
                             Periode Dividen
                         </span>
-                        <i className="fa fa-info-circle"
-                            style={{fontSize: "12px", color: "seagreen"}}
+                        <i  className="iconify"
+                            data-icon="ant-design:info-circle-outlined"
                             data-toggle="tooltip"
-                            data-original-title=""
+                            style={{fontSize: "12px", color: "seagreen"}}
                             title="Periode dividen aktual akan tetap mengacu pada laporan keuangan dan persetujuan Rapat Umum Pemegang Saham (RUPS).">
                         </i>
                     </div>
@@ -27,10 +27,10 @@ const ProjectDividendDetails = (props) => {
                         <span className="detail-2" style={{display: "inline"}}>
                             Estimasi Dividen
                         </span>
-                        <i className="fa fa-info-circle"
-                            style={{fontSize: "12px", color: "seagreen"}}
+                        <i  className="iconify"
+                            data-icon="ant-design:info-circle-outlined"
                             data-toggle="tooltip"
-                            data-original-title=""
+                            style={{fontSize: "12px", color: "seagreen"}}
                             title="Disclaimer: kinerja masa lalu bukan merupakan indikasi kinerja masa depan. Estimasi dividen adalah ilustrasi berdasarkan proyeksi konservatif, dividen aktual akan tetap mengacu pada kinerja penerbit dan persetujuan Rapat Umum Pemegang Saham (RUPS). Estimasi dividen belum termasuk potensi capital gain dari kenaikan harga saham.">
                         </i>
                     </div>
