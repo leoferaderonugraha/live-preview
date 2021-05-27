@@ -21,7 +21,7 @@ const CardBodyFundingProgress = (props) => {
                 <div className="row">
                     <div className="col">
                         <p className="progress-detail">
-                            Rp {props.remainingDays}
+                            {props.remainingDays}
                         </p>
                     </div>
                 </div>

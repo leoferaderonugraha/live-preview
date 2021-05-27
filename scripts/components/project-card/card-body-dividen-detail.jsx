@@ -28,7 +28,7 @@ const CardBodyDividendDetail = (props) => {
                 <div className="row">
                     <div className="col">
                         <p className="progress-detail-2">
-                            {props.annualRentYield}-{props.annualRentYieldUpper}% <span>Per Tahun</span>
+                            {props.annualRentYield}-{props.annualRentYieldUpper}% <small>Per Tahun</small>
                         </p>
                     </div>
                 </div>
