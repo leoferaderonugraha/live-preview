@@ -6,7 +6,7 @@ function initReact(project) {
                     <CarouselGallery
                         previewImages={project["previewImages"]}
                     />
-                    <CarouselGallery 
+                    <ProjectWrapper 
                         project={project}
                     />
                 </div>
