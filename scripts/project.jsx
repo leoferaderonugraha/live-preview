@@ -5,7 +5,7 @@ var project = {
         "https://landx.id/images/SIAP/1.png",
         "https://landx.id/images/SIAP/2.png"
     ],
-    "projectName": "Project Name",
+    "projectName": "FACILITY SERVICE MANAGEMENT - PT. SOLUSI INDONESIA ANUGERAH PERKASA",
     "category": "INDEKOS",
     "lotPrice": "1000000",
     "totalLot": "1000",

@@ -1,6 +1,6 @@
 const CardBodyDividendDetail = (props) => {
     return(
-        <div className="row mt-4">
+        <div className="row mt-3">
             <div className="col">
                 <div className="row">
                     <div className="col">
