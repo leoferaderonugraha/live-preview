@@ -5,11 +5,11 @@ const CardCarouselTarget = (props) => {
         /* Set the first image to be active */
         if (i == 0) {
             dataTargets.push(
-                <li data-target={'#' + props.id} data-slide-to={i} className="active"></li>
+                <li data-target={'#' + props.id} data-slide-to={i} className="active" key={i}></li>
             );
         } else {
             dataTargets.push(
-                <li data-target={'#' + props.id} data-slide-to={i}></li>
+                <li data-target={'#' + props.id} data-slide-to={i} key={i}></li>
             );
         }
     }
