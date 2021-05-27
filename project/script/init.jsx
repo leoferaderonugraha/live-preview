@@ -19,7 +19,7 @@ function initReact(project) {
                     mapImageUrl={project["mapImageUrl"]}
                 />
             </div>
-        </div>,
-        document.getElementById("root")
+        </div>
+        , document.getElementById("root")
     );
 }
