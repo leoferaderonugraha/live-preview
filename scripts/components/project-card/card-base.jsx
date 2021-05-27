@@ -2,7 +2,10 @@ const CardBase = (props) => {
     return (
         <div className="col">
             <div className="card">
-                <CardCarousel id={props.id}/>
+                <CardCarousel
+                    id={props.id}
+                    totalImages={props.totalImages}
+                />
             </div>
         </div>
     );

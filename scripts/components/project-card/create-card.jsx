@@ -1,8 +1,11 @@
-function CreateCard() {
+function CreateCard(project) {
     ReactDOM.render(
         <div className="container">
             <div className="row">
-                <CardBase id="test-carousel"/>
+                <CardBase
+                    id={project["id"]}
+                    totalImages={project["totalImages"]}
+                />
             </div>
         </div>
     
