@@ -26,6 +26,8 @@ const CardBody = (props) => {
                     dividendSchedule={props.dividendSchedule}
                     annualRentYield={props.annualRentYield}
                     annualRentYieldUpper={props.annualRentYieldUpper}
+                    dividendPeriodDesc={props.dividendPeriodDesc}
+                    dividendEstimatesDesc={props.dividendEstimatesDesc}
                 />
             </div>
         </div>

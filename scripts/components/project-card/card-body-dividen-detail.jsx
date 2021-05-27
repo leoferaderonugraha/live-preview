@@ -5,7 +5,7 @@ const CardBodyDividendDetail = (props) => {
                 <div className="row">
                     <div className="col">
                         <p className="sub-progress-detail">
-                            Periode Dividen <span className="iconify info-outline-circle" data-icon="ant-design:info-circle-outlined" data-toggle="tooltip" title="Hello"></span>
+                            Periode Dividen <span className="iconify info-outline-circle" data-icon="ant-design:info-circle-outlined" data-toggle="tooltip" title={props.dividendPeriodDesc}></span>
                         </p>
                     </div>
                 </div>
