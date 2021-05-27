@@ -4,6 +4,7 @@ function CreateCard() {
             <div className="row">
                 <CardBase />
             </div>
+            {alert(0)}
         </div>
     
         , document.getElementById("card-base")
