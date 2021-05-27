@@ -3,7 +3,8 @@ var project = {
     "previewImages": [
         "https://landx.id/images/SIAP/1.png",
         "https://landx.id/images/SIAP/2.png"
-    ]
+    ],
+    "projectName": "Project Name"
 }
 
 CreateCard(project);

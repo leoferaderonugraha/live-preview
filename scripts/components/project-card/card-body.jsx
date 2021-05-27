@@ -4,6 +4,9 @@ const CardBody = (props) => {
             <div className="container-fluid px-0">
                 <CardBodyButtonBuy />
                 <CardBodySymbol />
+                <CardBodyName 
+                    projectName={props.projectName}
+                />
             </div>
         </div>
     );
