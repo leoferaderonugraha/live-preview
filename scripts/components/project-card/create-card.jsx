@@ -6,6 +6,6 @@ function CreateCard() {
             </div>
         </div>
     
-        , document.getElementById('card-base')
+        , document.getElementById("card-base")
     );
 };
