@@ -56,30 +56,30 @@ fetch("https://api.landx.id/", {
      */
     var lastThree = [];
     for (var i = projects.length - 3; i < projects.length; i++) {
-        var tmpProject = projects[i];
-        tmpProject["landXProperty"].fundingProgress = numeral(tmpProject["landXProperty"]["launchProgress"] * tmpProject["landXProperty"]["totalPurchasePrice"]).format("0,0");
-        tmpProject["landXProperty"].totalFunding = numeral(tmpProject["landXProperty"]["totalPurchasePrice"]).format("0,0");
+        var tmpProject = projects[i]["landXProperty"];
+        tmpProject.fundingProgress = numeral(tmpProject["launchProgress"] * tmpProject["totalPurchasePrice"]).format("0,0");
+        tmpProject.totalFunding = numeral(tmpProject["totalPurchasePrice"]).format("0,0");
 
         /* Calculate the remaining days */
         const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
         const today = new Date().getTime();
-        tmpProject["landXProperty"].remainingDays = (tmpProject["landXProperty"]["settlementDate"] - today) / oneDay;
+        tmpProject.remainingDays = (tmpProject["settlementDate"] - today) / oneDay;
 
-        tmpProject["landXProperty"]["launchProgress"] *= 100;
-        tmpProject["landXProperty"]["initialTokenPrice"] = numeral(tmpProject["landXProperty"]["initialTokenPrice"]).format("0,0");
-        tmpProject["landXProperty"]["tokenSupply"] = parseInt(tmpProject["landXProperty"]["tokenSupply"], 10);
-        tmpProject["landXProperty"]["annualRentYield"] = parseFloat(tmpProject["landXProperty"]["annualRentYield"]) * 100;
-        tmpProject["landXProperty"]["annualRentYieldUpper"] = parseFloat(tmpProject["landXProperty"]["annualRentYieldUpper"]) * 100;
-        tmpProject["landXProperty"].isSold = false;
+        tmpProject["launchProgress"] *= 100;
+        tmpProject["initialTokenPrice"] = numeral(tmpProject["initialTokenPrice"]).format("0,0");
+        tmpProject["tokenSupply"] = parseInt(tmpProject["tokenSupply"], 10);
+        tmpProject["annualRentYield"] = parseFloat(tmpProject["annualRentYield"]) * 100;
+        tmpProject["annualRentYieldUpper"] = parseFloat(tmpProject["annualRentYieldUpper"]) * 100;
+        tmpProject.isSold = false;
 
 
-        if (tmpProject["landXProperty"].remainingDays < 0) {
-            tmpProject["landXProperty"].remainingDays = 0;
+        if (tmpProject.remainingDays < 0) {
+            tmpProject.remainingDays = 0;
         }
 
-        if (tmpProject["landXProperty"].fundingProgress >= tmpProject["landXProperty"].totalFunding) {
-            tmpProject["landXProperty"].isSold = true;
-            tmpProject["landXProperty"].remainingDays = 0;
+        if (tmpProject.fundingProgress >= tmpProject.totalFunding) {
+            tmpProject.isSold = true;
+            tmpProject.remainingDays = 0;
         }
 
         lastThree.push(tmpProject);
