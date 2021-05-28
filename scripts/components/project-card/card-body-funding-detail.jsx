@@ -1,4 +1,4 @@
-const CardBodyFundingProgress = (props) => {
+const CardBodyFundingDetail = (props) => {
     return (
         <div className="row">
             <div className="col-8">
