@@ -89,7 +89,7 @@ fetch("https://api.landx.id/", {
         lastThree.push(projects[i]);
     }
 
-    console.log("loaded new");
+    console.log("loaded new 1");
     console.log(lastThree);
 
     CreateCard(lastThree);
