@@ -69,9 +69,11 @@ fetch("https://api.landx.id/", {
         tmpProject["landXProperty"]["tokenSupply"] = parseInt(tmpProject["landXProperty"]["tokenSupply"], 10);
         tmpProject["landXProperty"]["annualRentYield"] = parseFloat(tmpProject["landXProperty"]["annualRentYield"]) * 100;
         tmpProject["landXProperty"]["annualRentYieldUpper"] = parseFloat(tmpProject["landXProperty"]["annualRentYieldUpper"]) * 100;
+
+        lastThree.push(tmpProject);
     }
 
-    console.log("loaded new 1");
+    console.log("loaded new 2");
     console.log(lastThree);
 
     CreateCard(lastThree);
