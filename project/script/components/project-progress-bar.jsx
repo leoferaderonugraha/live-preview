@@ -15,4 +15,4 @@ const ProjectProgressBar = (props) => {
             </div>
         </div>
     );
-};
+}

@@ -6,4 +6,4 @@ const ProjectCategory = (props) => {
             </button>
         </div>
     );
-};
+}

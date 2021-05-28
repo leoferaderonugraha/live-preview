@@ -1,15 +1,15 @@
-const ProjectFundingDetails = (props) => {
+const ProjectFundingDetail = (props) => {
     return (
         <div className="row">
             <div className="col">
                 <div className="row">
                     <p className="detail">
-                        Rp {props.fundingProgress}
+                        {props.fundingProgress}
                     </p>
                 </div>
                 <div className="row">
                     <p className="sub-detail">
-                        dari Rp {props.totalFunding}
+                        dari {props.totalFunding}
                     </p>
                 </div>
             </div>

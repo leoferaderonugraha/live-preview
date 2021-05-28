@@ -6,4 +6,4 @@ const ProjectSymbol = (props) => {
             </p>
         </div>
     );
-};
+}

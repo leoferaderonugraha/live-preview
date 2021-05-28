@@ -1,3 +1,12 @@
+function toIDR(money) {
+    return Intl.NumberFormat("id-ID",{
+        style: "currency",
+        currency: "IDR",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      }).format(money);
+}
+
 /* Assembly all the components */
 class ProjectWrapper extends React.Component {
     render() {
@@ -6,10 +15,10 @@ class ProjectWrapper extends React.Component {
         var projectIssuerName = this.props.project["issuerName"];
         var category = this.props.project["category"];
         var fundingProgress;
-        var totalFunding = numeral(this.props.project["totalPurchasePrice"]).format("0,0");
+        var totalFunding = toIDR(this.props.project["totalPurchasePrice"]);
         var progressBar = this.props.project["launchProgress"] * 100;
         var isSold = false;
-        var lotPrice = numeral(this.props.project["initialTokenPrice"]).format("0,0");
+        var lotPrice = toIDR(this.props.project["initialTokenPrice"]);
         var totalLot = parseInt(this.props.project["tokenSupply"], 10);
         var dividendSchedule = this.props.project["dividendSchedule"];
         var annualRentYield = parseFloat(this.props.project["annualRentYield"]) * 100;
@@ -29,9 +38,9 @@ class ProjectWrapper extends React.Component {
         if (this.props.project["launchProgress"] == null) {
             // market closed,
             // make assumption that it has been bought completely
-            fundingProgress = numeral(this.props.project["totalPurchasePrice"]).format("0,0");
+            fundingProgress = toIDR(this.props.project["totalPurchasePrice"]);
         } else {
-            fundingProgress = numeral(this.props.project["launchProgress"] * this.props.project["totalPurchasePrice"]).format("0,0");
+            fundingProgress = toIDR(this.props.project["launchProgress"] * this.props.project["totalPurchasePrice"]);
         }
 
         if (fundingProgress >= totalFunding) {
@@ -51,7 +60,7 @@ class ProjectWrapper extends React.Component {
                 <ProjectCategory
                     category={category}
                 />
-                <ProjectFundingDetails
+                <ProjectFundingDetail
                     fundingProgress={fundingProgress}
                     totalFunding={totalFunding}
                     remainingDays={Math.floor(remainingDays)}
@@ -63,7 +72,7 @@ class ProjectWrapper extends React.Component {
                     lotPrice={lotPrice}
                     totalLot={totalLot}
                 />
-                <ProjectDividendDetails
+                <ProjectDividendDetail
                     dividendSchedule={dividendSchedule}
                     annualRentYield={annualRentYield}
                     annualRentYieldUpper={annualRentYieldUpper}

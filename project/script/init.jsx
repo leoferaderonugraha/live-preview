@@ -13,7 +13,7 @@ function initReact(project) {
             </div>
             <hr className="mt-5 mb-5" />
             <div className="container">
-                <ProjectDescDetails
+                <ProjectDescDetail
                     description={project["description"]}
                     address={project["address"]}
                     mapImageUrl={project["mapImageUrl"]}

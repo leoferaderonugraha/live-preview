@@ -1,4 +1,4 @@
-const ProjectDescDetails = (props) => {
+const ProjectDescDetail = (props) => {
     return (
         <div className="row">
             <div className="col-md-6 left-box">

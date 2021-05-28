@@ -84,6 +84,14 @@ fetch("https://api.landx.id/", {
             tmpProject.remainingDays = 0;
         }
 
+        if (tmpProject["launchProgress"] == null) {
+            // market closed,
+            // make assumption that it has been bought completely
+            tmpProject.fundingProgress = toIDR(tmpProject["totalPurchasePrice"]);
+        } else {
+            tmpProject.fundingProgress = toIDR(tmpProject["launchProgress"] * tmpProject["totalPurchasePrice"]);
+        }
+
         if (tmpProject.fundingProgress >= tmpProject.totalFunding) {
             tmpProject.isSold = true;
             tmpProject.remainingDays = 0;

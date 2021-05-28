@@ -13,4 +13,4 @@ const ProjectTitle = (props) => {
             </div>
         </div>
     );
-};
+}
