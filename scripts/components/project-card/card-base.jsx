@@ -18,4 +18,4 @@ const CardBase = (props) => {
     }
 
     return (cards);
-};
+}

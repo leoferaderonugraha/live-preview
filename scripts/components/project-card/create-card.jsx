@@ -8,4 +8,4 @@ function CreateCard(props) {
 
         , document.getElementById("card-base")
     );
-};
+}

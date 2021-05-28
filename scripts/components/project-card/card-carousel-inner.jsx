@@ -23,4 +23,4 @@ const CardCarouselInner = (props) => {
             {carouselItem}
         </div>
     );
-};
+}

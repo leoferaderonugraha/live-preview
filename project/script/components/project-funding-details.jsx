@@ -27,4 +27,4 @@ const ProjectFundingDetails = (props) => {
             </div>
         </div>
     );
-};
+}

@@ -19,4 +19,4 @@ const CarouselGallery = (props) => {
             </div>
         </div>
     )
-};
+}

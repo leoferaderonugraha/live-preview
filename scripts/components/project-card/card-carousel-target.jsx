@@ -15,4 +15,4 @@ const CardCarouselTarget = (props) => {
     }
 
     return dataTargets;
-};
+}
