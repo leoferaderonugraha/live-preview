@@ -36,6 +36,7 @@ fetch("https://api.landx.id/", {
                 totalPurchasePrice
                 token {
                     name
+                    symbol
                 }
             }
         }
