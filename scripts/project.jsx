@@ -91,4 +91,6 @@ fetch("https://api.landx.id/", {
 
     console.log("loaded new");
     console.log(lastThree);
+
+    CreateCard(lastThree);
 });

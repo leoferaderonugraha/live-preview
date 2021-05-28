@@ -4,10 +4,10 @@ const CardBody = (props) => {
             <div className="container-fluid px-0">
                 <CardBodyButtonBuy />
                 <CardBodySymbol
-                    symbol={props.symbol}
+                    symbol={props.token.symbol}
                 />
                 <CardBodyName
-                    projectName={props.projectName}
+                    name={props.token.name}
                 />
                 <CardBodyCategory
                     category={props.category}
