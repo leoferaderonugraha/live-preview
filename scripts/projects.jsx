@@ -1,5 +1,13 @@
-/* This script require numeral.js */
 var listOfProjects = {};
+
+function toIDR(money) {
+    return Intl.NumberFormat("id-ID",{
+        style: "currency",
+        currency: "IDR",
+        minimumFractionDigits: 0,
+        maximumFractionDigits: 0,
+      }).format(money);
+}
 
 fetch("https://api.landx.id/", {
     method: "POST",
@@ -57,8 +65,8 @@ fetch("https://api.landx.id/", {
     var lastThree = [];
     for (var i = projects.length - 3; i < projects.length; i++) {
         var tmpProject = projects[i]["landXProperty"];
-        tmpProject.fundingProgress = numeral(tmpProject["launchProgress"] * tmpProject["totalPurchasePrice"]).format("0,0");
-        tmpProject.totalFunding = numeral(tmpProject["totalPurchasePrice"]).format("0,0");
+        tmpProject.fundingProgress = toIDR(tmpProject["launchProgress"] * tmpProject["totalPurchasePrice"]);
+        tmpProject.totalFunding = toIDR(tmpProject["totalPurchasePrice"]);
 
         /* Calculate the remaining days */
         const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
@@ -66,12 +74,11 @@ fetch("https://api.landx.id/", {
         tmpProject.remainingDays = (tmpProject["settlementDate"] - today) / oneDay;
 
         tmpProject["launchProgress"] *= 100;
-        tmpProject["initialTokenPrice"] = numeral(tmpProject["initialTokenPrice"]).format("0,0");
+        tmpProject["initialTokenPrice"] = toIDR(tmpProject["initialTokenPrice"]);
         tmpProject["tokenSupply"] = parseInt(tmpProject["tokenSupply"], 10);
         tmpProject["annualRentYield"] = parseFloat(tmpProject["annualRentYield"]) * 100;
         tmpProject["annualRentYieldUpper"] = parseFloat(tmpProject["annualRentYieldUpper"]) * 100;
         tmpProject.isSold = false;
-
 
         if (tmpProject.remainingDays < 0) {
             tmpProject.remainingDays = 0;
