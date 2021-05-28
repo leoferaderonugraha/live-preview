@@ -68,5 +68,11 @@ fetch("https://api.landx.id/", {
 .then(r => r.json())
 .then(data => listOfProjects = data)
 .then(() => {
-    console.log(listOfProjects);
+    listOfProjects["data"]["currencies"].forEach((item, index) => {
+        if (item["landXProperty"] == null) {
+            delete listOfProjects["data"]["currencies"][index];
+        }
+    });
+
+    console.log("loaded new");
 });
