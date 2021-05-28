@@ -12,7 +12,7 @@ const CardBodyLotPrice = (props) => {
                 <div className="row">
                     <div className="col">
                         <p className="progress-detail-2">
-                            {props.lotPrice}
+                            {props.initialTokenPrice}
                         </p>
                     </div>
                 </div>

@@ -4,7 +4,7 @@ const CardBase = (props) => {
     /* Take an array of landXProperty */
     for (var i = 0; i < props.length; i++) {
         cards.push(
-            <div className="col-sm-12 col-md-3" key={props[i]["landXProperty"].id}>
+            <div className="col-sm-12 col-md-4" key={props[i]["landXProperty"].id}>
                 <div className="card custom">
                     <CardCarousel
                         id={props[i]["landXProperty"].id}

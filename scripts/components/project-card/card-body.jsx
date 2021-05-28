@@ -21,8 +21,8 @@ const CardBody = (props) => {
                     launchProgress={props.launchProgress}
                 />
                 <CardBodyLotPrice
-                    lotPrice={props.lotPrice}
-                    totalLot={props.totalLot}
+                    initialTokenPrice={props.initialTokenPrice}
+                    tokenSupply={props.tokenSupply}
                 />
                 <CardBodyDividendDetail
                     dividendSchedule={props.dividendSchedule}
