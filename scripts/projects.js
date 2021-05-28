@@ -73,6 +73,7 @@ fetch("https://api.landx.id/", {
         const today = new Date().getTime();
         tmpProject.remainingDays = (tmpProject["settlementDate"] - today) / oneDay;
 
+        tmpProject.link = `https://landx.id/project/${toLowerCase(tmpProject["token"]["symbol"])}`;
         tmpProject["launchProgress"] *= 100;
         tmpProject["initialTokenPrice"] = toIDR(tmpProject["initialTokenPrice"]);
         tmpProject["tokenSupply"] = parseInt(tmpProject["tokenSupply"], 10);
