@@ -5,14 +5,14 @@ const CardBodyFundingProgress = (props) => {
                 <div className="row">
                     <div className="col">
                         <p className="progress-detail">
-                            Rp {props.fundingProgress}
+                            {props.fundingProgress}
                         </p>
                     </div>
                 </div>
                 <div className="row">
                     <div className="col">
                         <p className="sub-progress-detail">
-                            dari Rp {props.totalFunding} Total Pendanaan
+                            dari {props.totalFunding} Total Pendanaan
                         </p>
                     </div>
                 </div>
