@@ -68,11 +68,27 @@ fetch("https://api.landx.id/", {
 .then(r => r.json())
 .then(data => listOfProjects = data)
 .then(() => {
-    listOfProjects["data"]["currencies"].forEach((item, index) => {
-        if (item["landXProperty"] == null) {
+    /* Remove empty project(s) */
+    listOfProjects["data"]["currencies"].forEach(function(item, index) {
+        if ( item["landXProperty"] == null 
+        || item["landXProperty"] == "") {
             delete listOfProjects["data"]["currencies"][index];
         }
     });
 
+    /* Rearrange projects */
+    var projects = [];
+
+    for (var key in listOfProjects["data"]["currencies"]) {
+        projects.push(listOfProjects["data"]["currencies"][key]);
+    }
+    
+    /* Get the last three projects */
+    var lastThree = [];
+    for (var i = projects.length - 3; i < projects.length; i++) {
+        lastThree.push(projects[i]);
+    }
+
     console.log("loaded new");
+    console.log(lastThree);
 });
