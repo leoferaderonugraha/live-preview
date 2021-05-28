@@ -38,7 +38,7 @@ fetch("https://api.landx.id/", {
 .then(() => {
     /* Remove empty project(s) */
     listOfProjects["data"]["currencies"].forEach(function(item, index) {
-        if ( item["landXProperty"] == null 
+        if ( item["landXProperty"] == null
         || item["landXProperty"] == "") {
             delete listOfProjects["data"]["currencies"][index];
         }
@@ -50,7 +50,7 @@ fetch("https://api.landx.id/", {
     for (var key in listOfProjects["data"]["currencies"]) {
         projects.push(listOfProjects["data"]["currencies"][key]);
     }
-    
+
     /* Get the last three projects
      * and make the details
      */
@@ -59,16 +59,28 @@ fetch("https://api.landx.id/", {
         var tmpProject = projects[i];
         tmpProject["landXProperty"].fundingProgress = numeral(tmpProject["landXProperty"]["launchProgress"] * tmpProject["landXProperty"]["totalPurchasePrice"]).format("0,0");
         tmpProject["landXProperty"].totalFunding = numeral(tmpProject["landXProperty"]["totalPurchasePrice"]).format("0,0");
-        
+
         /* Calculate the remaining days */
         const oneDay = 24 * 60 * 60 * 1000; // Hours * Minutes * Seconds * Milliseconds
         const today = new Date().getTime();
         tmpProject["landXProperty"].remainingDays = (tmpProject["landXProperty"]["settlementDate"] - today) / oneDay;
-        tmpProject["landXProperty"].progress *= 100;
+
+        tmpProject["landXProperty"]["launchProgress"] *= 100;
         tmpProject["landXProperty"]["initialTokenPrice"] = numeral(tmpProject["landXProperty"]["initialTokenPrice"]).format("0,0");
         tmpProject["landXProperty"]["tokenSupply"] = parseInt(tmpProject["landXProperty"]["tokenSupply"], 10);
         tmpProject["landXProperty"]["annualRentYield"] = parseFloat(tmpProject["landXProperty"]["annualRentYield"]) * 100;
         tmpProject["landXProperty"]["annualRentYieldUpper"] = parseFloat(tmpProject["landXProperty"]["annualRentYieldUpper"]) * 100;
+        tmpProject["landXProperty"].isSold = false;
+
+
+        if (tmpProject["landXProperty"].remainingDays < 0) {
+            tmpProject["landXProperty"].remainingDays = 0;
+        }
+
+        if (tmpProject["landXProperty"].fundingProgress >= tmpProject["landXProperty"].totalFunding) {
+            tmpProject["landXProperty"].isSold = true;
+            tmpProject["landXProperty"].remainingDays = 0;
+        }
 
         lastThree.push(tmpProject);
     }
