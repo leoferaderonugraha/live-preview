@@ -125,3 +125,21 @@
     color: #2dbe60;
     margin-bottom: -1px;
 }
+
+@media (max-width: 1200px) {
+    .sold-banner > .sold-image {
+        left: 59px
+    }
+}
+
+@media (max-width: 992px) {
+    .sold-banner > .sold-image {
+        left: -1px
+    }
+}
+
+@media (max-width: 768px) {
+    .sold-banner > .sold-image {
+        left: 89px;
+    }
+}
