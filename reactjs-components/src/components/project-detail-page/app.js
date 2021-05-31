@@ -19,7 +19,13 @@ export const initReactApp = (project) => {
                 </div>
             </div>
 
-            <hr className="mt-5 mb-5" />
+            <div className="mt-5 mb-5">
+                <div className="row">
+                    <div className="col-12">
+                        <hr />
+                    </div>
+                </div>
+            </div>
             <div className="container">
                 <ProjectDescDetail
                     description={project.description}
