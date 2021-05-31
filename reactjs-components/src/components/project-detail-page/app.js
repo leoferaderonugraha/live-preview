@@ -19,7 +19,7 @@ export const initReactApp = (project) => {
                 </div>
             </div>
 
-            <div className="mt-5 mb-5">
+            <div className="container mt-5 mb-5">
                 <div className="row">
                     <div className="col-12">
                         <hr />
